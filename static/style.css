@@ -1,5 +1,5 @@
 .header {
-    background-color: ;
+    background-color:#48ACF0 ;
        
 }
 
@@ -19,8 +19,33 @@ a {
 a:hover {
     color: #E0E1DD;
   }
-  
 
 body {
    background-color: #48ACF0;
+}
+
+.heading {
+    display: flex;
+    justify-content:flex-start;
+    padding: 5%; 
+    font-family: 'Gravitas One', cursive;
+    font-size: 80px;
+    color: #121212;
+}
+
+.rules {
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+
+.conditions {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    
 }
