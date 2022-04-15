@@ -1,0 +1,15 @@
+{% extends "base.html"%}
+
+{% block content %}
+
+<form action="/play" method="post"> <!-- ADDED -->
+    <label for="Name">Name:</label>
+    <input type="text" name="name" id="name">
+    
+    <!-- <textarea name="description" rows="2" cols="30"></textarea> -->
+    <input type="submit" value="Go!">
+</form>
+
+
+    
+{% endblock %}

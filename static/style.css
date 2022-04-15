@@ -1,0 +1,26 @@
+.header {
+    background-color: ;
+       
+}
+
+.menu {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+a:hover {
+    color: #E0E1DD;
+  }
+  
+
+body {
+   background-color: #48ACF0;
+}

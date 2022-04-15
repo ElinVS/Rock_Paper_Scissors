@@ -1,0 +1,30 @@
+body {
+    display:flex;
+    justify-content: space-evenly;
+    padding: 20%; 
+    background-color: #121212; 
+}
+
+a {
+
+    text-decoration: none;
+    color: bisque;
+    
+}
+
+.text {
+    background-image: linear-gradient(#48ACF0, bisque);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px 50px 10px 50px;
+
+    transition: background-size 500ms; 
+}
+
+.text:hover {
+    background-size: 100% 100%;
+    background-position-x: left;
+}
