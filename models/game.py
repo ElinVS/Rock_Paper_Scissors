@@ -11,18 +11,16 @@ def player_vs_computer(player, computer):
     if player == computer :
         winner = "tie"
         
-
-    elif player == "rock" and computer == "paper":
+    if player == "rock" and computer == "paper":
         if player == "paper" and computer == "scissors":
             if player == "scissors" and computer == "rock":
                 winner = "computer"
 
-    elif player == "rock" and computer == "scissors":
+    if player == "rock" and computer == "scissors":
         if player == "paper" and computer == "rock":
             if player == "scissors" and computer == "paper":
                 winner = "player"
 
-    
         return winner
 
 

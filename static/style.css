@@ -105,3 +105,16 @@ input[type=submit]:hover {
     background: #E03616;
 }
 
+.show_winner {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-family:'Gravitas One', cursive;
+    font-size: x-large;
+    padding: 5%;
+}
+
+.show_winner > #winner {
+    color: #E03616;
+
+        }

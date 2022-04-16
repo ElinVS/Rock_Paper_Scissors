@@ -2,14 +2,23 @@
 
 {% block content %}
 
-{% if winner == 'tie' %}
 
-<hgroup>
+
+<hgroup class = "show_winner">
+    <h1>
+        {{player_name}} picked {{player_choice}}
+        
+    </h1>
+
+    <h1>Computer picked {{ computer }}</h1>
+
+    {% if winner == 'tie' %}
+
     <h1> {{ player.name }} ,great minds think a like. Try Again!</h1> 
 
 {%else%}
 
-    <h1> {{ winner }} won this round!</h1>
+    <h1 id="winner"> {{ winner }} won this round!</h1>
 </hgroup>
 
 {% endif %}
