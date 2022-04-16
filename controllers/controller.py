@@ -1,8 +1,9 @@
 from flask import render_template, request
 from app import app
+from models.game import computers_choice
 from models.player import Player
 import random
-#from models.game import 
+from models.game import player_vs_computer 
 
 
 @app.route('/',)      
@@ -21,28 +22,14 @@ def explain_game():
 def play_game():
     return render_template('play.html')
 
-# @app.route('/')
+@app.route ('/results', methods=['POST'])
+def show_outcome():
+    print(request.form)
+    player_name = request.form["name"]
+    player_choice = request.form["choice"]
+    new_player = Player(player_name, player_choice)
+    computer = computers_choice()
 
+    player_vs_computer(new_player,computer) 
 
-
-
-
-
-
-
-
-# player1 = Player("Nadja", "Rock")
-# player2 = Player("Aston", "Paper")
-
-# @app.route('')
-# def game_played():
-
-
-
-
-
-
-
-    #rock beats scissors
-    #paper beats rock
-    #scissors beats paper
+    return render_template('results.html')
