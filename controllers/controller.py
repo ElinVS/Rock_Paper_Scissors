@@ -1,3 +1,4 @@
+from crypt import methods
 from flask import render_template, request
 from app import app
 from models.game import computers_choice
@@ -22,14 +23,18 @@ def explain_game():
 def play_game():
     return render_template('play.html')
 
-@app.route ('/results', methods=['POST'])
+@app.route ('/results',methods=['POST'] )
 def show_outcome():
     print(request.form)
+    
     player_name = request.form["name"]
     player_choice = request.form["choice"]
-    new_player = Player(player_name, player_choice)
+    new_player = Player(player_name, player_choice) 
     computer = computers_choice()
+    winner = player_vs_computer(new_player, computer)
 
-    player_vs_computer(new_player,computer) 
+    
+    print(player_choice)
+    print(computer)
 
-    return render_template('results.html')
+    return render_template('results.html', winner = winner )

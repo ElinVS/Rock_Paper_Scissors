@@ -2,7 +2,16 @@
 
 {% block content %}
 
-<h1> {{ self.winner }}</h1> 
+{% if winner == 'tie' %}
 
+<hgroup>
+    <h1> {{ player.name }} ,great minds think a like. Try Again!</h1> 
+
+{%else%}
+
+    <h1> {{ winner }} won this round!</h1>
+</hgroup>
+
+{% endif %}
 
 {% endblock %}
