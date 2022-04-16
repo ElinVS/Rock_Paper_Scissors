@@ -1,5 +1,21 @@
 
-# def rock_paper_scissor():
+import random
+
+
+def computers_choice():
+
+    rps =["rock", "paper", "scissors"]
+    return rps.random.choice(rps)
+
+
+
+
+
+
+        
+        
+
+
 
 
 

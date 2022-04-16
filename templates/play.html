@@ -1,24 +1,35 @@
 {% extends "base.html"%}
 
 {% block content %}
+<div class="form">
+<form action="/play" method="post"> 
+    <div class="name">
+        <label for="Name">Name:</label>
+        <input type="text" name="name" id="name">
+    </div>
 
-<form action="/play" method="post"> <!-- ADDED -->
-    <label for="Name">Name:</label>
-    <input type="text" name="name" id="name">
-
-    <label for="choice">Make a choice:</label>
-        <select id="choice" name="choice">
+    
+        <label for="choice">Make a choice:</label>
+        <br>
+        <select id="choice" name="choice"><br>
+    
+            
           <option value="rock">Rock</option>
           <option value="paper">Paper</option>
           <option value="scissors">Scissors</option>
+        
         </select>
+       
+  
 
-
-
-    
     <!-- <textarea name="description" rows="2" cols="30"></textarea> -->
-    <input type="submit" value="Go!">
+   
+    <input type="submit" value="Shoot!">
+    
 </form>
+</div>
+
+<div class="circle"></div>
 
 
     

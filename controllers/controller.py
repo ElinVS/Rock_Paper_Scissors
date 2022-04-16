@@ -1,15 +1,16 @@
-from flask import render_template 
+from flask import render_template, request
 from app import app
 from models.player import Player
+import random
 #from models.game import 
 
 
 @app.route('/',)      
-def home():
+def start():
     return render_template('startpage.html')
 
 @app.route('/home')
-def welcome():
+def home():
     return render_template('home.html')
 
 @app.route('/rules')
@@ -23,8 +24,9 @@ def play_game():
 # player1 = Player("Nadja", "Rock")
 # player2 = Player("Aston", "Paper")
 
-# @app.route('/<player1_choice>/<player2_choice>')
-# def 
+# @app.route('')
+# def game_played():
+
 
 
 

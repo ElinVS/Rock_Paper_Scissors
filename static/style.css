@@ -1,5 +1,7 @@
 .header {
     background-color:#48ACF0 ;
+    position: sticky;
+    top: 0;
        
 }
 
@@ -24,7 +26,7 @@ body {
    background-color: #48ACF0;
 }
 
-.heading {
+.rps {
     display: flex;
     justify-content:flex-start;
     padding: 5%; 
@@ -35,17 +37,72 @@ body {
 
 .rules {
     display:flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     font-family: 'Poppins', sans-serif;
-    padding: 20px;
+    font-size: 20px;
+    padding: 20px 70px 0px;
+}
+
+.rules > hgroup > h1 {
+    font-size: 25px;
 }
 
 .conditions {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:flex-start;
+    padding: 0% 5%;    
+}
+
+.conditions > h1 {
+    font-family: 'Gravitas One', cursive;
+    font-size: 50px;
+    color: #121212;   
+}
+
+.form {
     display:flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
     font-family: 'Poppins', sans-serif;
-    padding: 20px;
+    font-size: x-large;
+    padding: 5%;
+}
+
+input[type=text] {
+    width: 80%;
+    height: 80%;
+    background-color: #E0E1DD;
+    font-family:'Poppins', sans-serif; ;
+    font-size: large;
+    border-color: transparent;
+    border-radius: 20px;
     
 }
+
+select {
+    width:52%;
+    background-color: #E0E1DD;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    border-color: transparent;
+    border-radius: 20px;
+    padding: 2px;
+    
+}
+
+input[type=submit] {
+    background-color: #E0E1DD;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    border-color: transparent;
+    border-radius: 20px;
+    cursor: pointer; 
+    
+}
+
+input[type=submit]:hover {
+    background: #0A8754
+}
+
