@@ -29,7 +29,7 @@ body {
 .rps {
     display: flex;
     justify-content:flex-start;
-    padding: 5%; 
+    padding: 0% 5%; 
     font-family: 'Gravitas One', cursive;
     font-size: 80px;
     color: #121212;
@@ -63,46 +63,45 @@ body {
 
 .form {
     display:flex;
-    flex-wrap: nowrap;
     justify-content: flex-start;
-    font-family: 'Poppins', sans-serif;
+    
+    font-family: 'Gravitas One', cursive;
     font-size: x-large;
     padding: 5%;
 }
 
 input[type=text] {
-    width: 80%;
-    height: 80%;
     background-color: #E0E1DD;
     font-family:'Poppins', sans-serif; ;
     font-size: large;
     border-color: transparent;
     border-radius: 20px;
     
+    
 }
 
 select {
-    width:52%;
+    width:45%;
     background-color: #E0E1DD;
     font-family: 'Poppins', sans-serif;
     font-size: large;
     border-color: transparent;
     border-radius: 20px;
-    padding: 2px;
-    
+    padding: 2px;    
 }
+
 
 input[type=submit] {
     background-color: #E0E1DD;
     font-family: 'Poppins', sans-serif;
     font-size: large;
+    width: 100px;
     border-color: transparent;
     border-radius: 20px;
-    cursor: pointer; 
-    
+    cursor: pointer;    
 }
 
 input[type=submit]:hover {
-    background: #0A8754
+    background: #E03616;
 }
 

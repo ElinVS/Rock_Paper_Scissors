@@ -3,9 +3,8 @@ import random
 
 
 def computers_choice():
-
     rps =["rock", "paper", "scissors"]
-    return rps.random.choice(rps)
+    return rps[random.choice(rps)]
 
 
 

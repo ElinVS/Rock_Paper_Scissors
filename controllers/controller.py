@@ -21,6 +21,16 @@ def explain_game():
 def play_game():
     return render_template('play.html')
 
+# @app.route('/')
+
+
+
+
+
+
+
+
+
 # player1 = Player("Nadja", "Rock")
 # player2 = Player("Aston", "Paper")
 
