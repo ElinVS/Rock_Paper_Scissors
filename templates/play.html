@@ -1,29 +1,52 @@
 {% extends "base.html"%}
 
 {% block content %}
-<div class="form">
-<form action="/results" method="post"> 
-    <br>
+
+
+<div class="formcontainer">
+    <h2>Player vs Computer</h2>
+
+    <form action="/results" method="post"> 
         <label for="Name">Name</label> 
-        <input type="text" name="name" id="name"> 
-    <br>
-    <br>
-    <label for="choice">Choice</label>
+        <input type="text" name="name" id="name" placeholder="Type in your name"> 
+        <label for="choice">Choice</label>
         <select id="choice" name="choice">  
           <option value="rock">Rock</option>
           <option value="paper">Paper</option>
           <option value="scissors">Scissors</option>
         </select>
-    <br> 
-    <label for="Submit"> <br> &#8594</label>
+    
+    <label for="Submit"> &#10159 </label>
     <input type="submit" value="Shoot!">
 
-
-    <a href="/rock/rock">Rock vs Rock</a>
-    
-  
-</form>
+    </form>
 </div>
+<hr>
+
+<div class="linkcontainer">
+    <h2>Batman vs Superman</h2>
+    <p>
+        <a href="rock/rock">Rock vs Rock &#9830</a>
+        <a href="rock/paper">Rock vs Paper &#9830</a>
+        <a href="rock/scissors">Rock vs Scissors</a>
+    </p>
+
+    <p>
+        <a href="paper/paper">Paper vs Paper &#9852</a>
+        <a href="paper/scissors"> Paper vs Scissors &#9852</a>
+        <a href="paper/rock">Paper vs Rock</a>
+    </p>
+
+    <p>
+        <a href="scissors/scissors"> Scissors vs Scissors &#9986 </a>
+        <a href="scissors/rock">Scissors vs Rock  &#9986</a>
+        <a href="scissors/paper">Scissors vs Rock</a>
+    </p>
+
+</div>
+
+
+
 
 <div class="circle"></div>
 

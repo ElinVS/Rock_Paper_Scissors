@@ -8,22 +8,22 @@ def play_the_game(player1,player2):
         return "no one"
 
     if player1 == "rock" and player2 == "paper":
-        return "player2"
+        return "Superman"
 
     if player1 == "paper" and player2 == "scissors":
-        return "player2"
+        return "Superman"
 
     if player1 == "scissors" and player2 == "rock":
-        return "player2"
+        return "Superman"
 
     if player1 == "rock" and player2 == "scissors":
-        return "player1"
+        return "Batman"
     
     if player1 == "paper" and player2 == "rock":
-        return "player1"
+        return "Batman"
     
     if player1 == "scissors" and player2 == "paper":
-        return "player1"
+        return "Batman"
 
 
 

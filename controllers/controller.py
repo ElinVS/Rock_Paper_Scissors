@@ -25,15 +25,14 @@ def play_game():
 
 @app.route('/<player1_choice>/<player2_choice>')
 def game(player1_choice,player2_choice):
-    player1 = Player("player1", player1_choice)
-    player2 = Player("player2", player2_choice)
+    Batman = Player("Batman", player1_choice)
+    Superman = Player("Superman", player2_choice)
     winner = play_the_game(player1_choice,player2_choice)
 
     
-    print (player1)
-    print(player2)
+    
 
-    return render_template('browsergame.html', winner = winner, player1= "player1", player1_choice = player1_choice, player2="player2", player2_choice = player2_choice)
+    return render_template('browsergame.html', winner = winner, Batman = "Batman", player1_choice = player1_choice, Superman ="Superman", player2_choice = player2_choice)
 
 
 

@@ -61,16 +61,29 @@ body {
     color: #121212;   
 }
 
-.form {
-    display:flex;
-    justify-content: flex-start;
-    
+.linkcontainer {
+    display: flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0px 50px;
+    font-family: 'Gravitas One', cursive;
+    font-size: large;
+}
+
+.linkcontainer > h2 {
+    font-size: x-large;
+}
+
+.formcontainer{
     font-family: 'Gravitas One', cursive;
     font-size: x-large;
-    padding: 5%;
+    padding: 30px 50px; 
+      
 }
 
 input[type=text] {
+    width: 30%;
     background-color: #E0E1DD;
     font-family:'Poppins', sans-serif; ;
     font-size: large;
@@ -81,7 +94,7 @@ input[type=text] {
 }
 
 select {
-    width:45%;
+    width:30%;
     background-color: #E0E1DD;
     font-family: 'Poppins', sans-serif;
     font-size: large;
@@ -117,4 +130,11 @@ input[type=submit]:hover {
 .show_winner > #winner {
     color: #E03616;
 
-        }
+}
+
+hr {
+    border: dashed #4bb3f8;
+}
+
+
+
