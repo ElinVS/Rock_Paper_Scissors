@@ -7,22 +7,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-        <title>{{ title }}  Rock Paper Scissor </title>
+        <title>{{ title }} &#9758 Rock Paper Scissor </title>
     </head>
     <body>
         <header class = "header">
             <hgroup class="menu">
-                
                 <h2><a href="/home">Home</a></h2>
                 <h2><a href="/rules">Rules</a></h2>
                 <h2><a href="/play">Play</a></h2> 
             </hgroup>
-            
         </header>
         {% block content %}
 
         {% endblock %}
-
     </body>
 </html>
 

@@ -1,7 +1,7 @@
-from crypt import methods
+
 from flask import render_template, request
 from app import app
-from models.game import computers_choice, play_the_game
+from models.game import computers_choice, play_the_game 
 from models.player import Player
 import random
 from models.game import player_vs_computer 
@@ -29,15 +29,10 @@ def game(player1_choice,player2_choice):
     Superman = Player("Superman", player2_choice)
     winner = play_the_game(player1_choice,player2_choice)
 
-    
-    
-
     return render_template('browsergame.html', winner = winner, Batman = "Batman", player1_choice = player1_choice, Superman ="Superman", player2_choice = player2_choice)
 
 
-
-###########################################################################
-
+######################################################################
 
 
 @app.route ('/results',methods=['POST'] )
@@ -50,8 +45,8 @@ def show_outcome():
     computer = computers_choice()
     winner = player_vs_computer(player_choice, computer)
 
-    
     print(player_choice)
     print(computer)
+    print(winner)
 
     return render_template('results.html',computer = computers_choice(), player_name = player_name, player_choice = player_choice,  winner = winner )

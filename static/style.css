@@ -2,7 +2,6 @@
     background-color:#48ACF0 ;
     position: sticky;
     top: 0;
-       
 }
 
 .menu {
@@ -20,7 +19,7 @@ a {
 
 a:hover {
     color: #E0E1DD;
-  }
+}
 
 body {
    background-color: #48ACF0;
@@ -79,7 +78,6 @@ body {
     font-family: 'Gravitas One', cursive;
     font-size: x-large;
     padding: 30px 50px; 
-      
 }
 
 input[type=text] {
@@ -88,9 +86,7 @@ input[type=text] {
     font-family:'Poppins', sans-serif; ;
     font-size: large;
     border-color: transparent;
-    border-radius: 20px;
-    
-    
+    border-radius: 20px;   
 }
 
 select {
@@ -129,7 +125,6 @@ input[type=submit]:hover {
 
 .show_winner > #winner {
     color: #E03616;
-
 }
 
 hr {
