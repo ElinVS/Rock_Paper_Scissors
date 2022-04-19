@@ -38,15 +38,17 @@ def game(player1_choice,player2_choice):
 @app.route ('/results',methods=['POST'] )
 def show_outcome():
     print(request.form)
-    
+
     player_name = request.form["name"]
     player_choice = request.form["choice"]
-    Player(player_name, player_choice) 
+    player = Player(player_name, player_choice) 
     computer = computers_choice()
-    winner = player_vs_computer(player_choice, computer)
+    winner = player_vs_computer(player, computer)
 
     print(player_choice)
     print(computer)
     print(winner)
 
-    return render_template('results.html',computer = computers_choice(), player_name = player_name, player_choice = player_choice,  winner = winner )
+    return render_template('results.html',computer = computer, player = player,  winner = winner )
+
+# player_name = player_name, player_choice = player_choice

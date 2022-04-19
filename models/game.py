@@ -36,16 +36,16 @@ def computers_choice():
 
 
 def player_vs_computer(player, computer):
-    winner = "computer"
+    winner = computer
 
     if player == computer:
-        winner = "draw"
+        winner = "No one"
     if player == "rock" and computer == "scissors":
-        winner = "player"
+        winner = player
     if player == "scissors" and computer == "paper":
-        winner = "player"
+        winner = player
     if player == "paper" and computer == "rock":
-        winner = "player"
+        winner = player
 
     return winner
 
