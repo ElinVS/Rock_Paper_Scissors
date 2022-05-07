@@ -7,13 +7,21 @@ import random
 from models.game import player_vs_computer 
 
 
-@app.route('/',)      
+@app.route('/')      
 def start():
     return render_template('startpage.html')
 
 @app.route('/home')
 def home():
     return render_template('home.html')
+
+@app.route('/rock')
+def rock():
+    return render_template('rock.html')
+
+@app.route('/paper')
+def paper():
+    return render_template('paper.html')
 
 @app.route('/rules')
 def explain_game():
@@ -42,13 +50,15 @@ def show_outcome():
     player_name = request.form["name"]
     player_choice = request.form["choice"]
     player = Player(player_name, player_choice) 
-    computer = computers_choice()
+    choice = computers_choice()
+    computer = Player("Computer", choice )
+    
     winner = player_vs_computer(player, computer)
 
     print(player_choice)
     print(computer)
     print(winner)
 
-    return render_template('results.html',computer = computer, player = player,  winner = winner )
+    return render_template('results.html',computer = computer, player = player,  winner = winner)
 
-# player_name = player_name, player_choice = player_choice
+# player_name = player_name, player_choice = player_choice Player("computer",

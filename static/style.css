@@ -132,4 +132,18 @@ hr {
 }
 
 
+.home-links {
+    font-family: 'Gravitas One', cursive;
+    font-size: 120px;
+    color: #121212;
+}
 
+.facts {
+    display: flex;
+    justify-content:flex-start;
+    padding: 0% 5%; 
+    font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
+    color: #121212;
+    margin-top: 10%;
+}
