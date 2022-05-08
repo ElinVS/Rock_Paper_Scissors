@@ -1,5 +1,5 @@
 
-![This is an image](/static/images/rps.png)
+![Screenshot](/static/images/rps.png)
 
 # Rock Paper Scissors 2022
 
