@@ -138,6 +138,8 @@ hr {
     color: #121212;
 }
 
+
+
 .facts {
     display: flex;
     justify-content:flex-start;
@@ -147,3 +149,5 @@ hr {
     color: #121212;
     margin-top: 10%;
 }
+
+

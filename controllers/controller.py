@@ -3,7 +3,6 @@ from flask import render_template, request
 from app import app
 from models.game import computers_choice, play_the_game 
 from models.player import Player
-import random
 from models.game import player_vs_computer 
 
 
@@ -22,6 +21,10 @@ def rock():
 @app.route('/paper')
 def paper():
     return render_template('paper.html')
+
+@app.route('/scissors')
+def scissors():
+    return render_template('scissors.html')
 
 @app.route('/rules')
 def explain_game():
